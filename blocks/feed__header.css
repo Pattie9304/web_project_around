@@ -1,11 +1,11 @@
-.feed__header
+.feed
 {
     height: auto;
     margin: 40px auto 80px;
     max-width: 880px;
 }
 
-.feed__header_content
+.feed__content
 {
     display: grid;
     grid-template-columns: 120px repeat(2, 1fr);
@@ -37,7 +37,7 @@
     max-width: 415px;
   }
 
-.feed__content-name
+.feed__content-info_name
 {
     min-width: 415px;
     display: grid;
@@ -50,7 +50,7 @@
     color:#ffffff;
 }
 
-.feed__content-profession
+.feed__content-info_profession
 {
     grid-column: 1 / 5;
     grid-row: 2;
@@ -83,7 +83,7 @@
     border-color: rgba(255, 255, 255, 0.6);
   }
   
-  .feed__info_edit_button {
+  .feed__content-info_edit-button {
     grid-column: 7;
     width: 24px;
     height: 24px;
@@ -97,16 +97,16 @@
     border-width: thin;
   }
   
-  .feed__info_edit_button:hover {
+  .feed__content-info_edit-button:hover {
     border-color: rgba(0, 0, 0, 0.8);
   }
   
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .feed__header {
+    .feed {
       max-width: 768px;
     }
   
-    .feed__header_content {
+    .feed__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -130,22 +130,22 @@
       width: 80%;
     }
   
-    .feed__content-name {
+    .feed__content-info_name {
       font-size: 25px;
     }
   
-    .feed__info_edit_button {
+    .feed__content-info_edit-button {
       align-self: center;
     }
   }
   
   @media screen and (min-width: 320px) and (max-width: 768px) {
   
-    .feed__header {
+    .feed {
       width: 100%;
     }
   
-    .feed__header_content {
+    .feed__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -168,16 +168,16 @@
       width: 90%;
     }
   
-    .feed__content-name {
+    .feed__content-info_name {
       font-size: 22px;
       text-align: center;
     }
   
-    .feed__content-profession {
+    .feed__content-info_profession {
       font-size: 15px;
     }
   
-    .feed__info_edit_button {
+    .feed__content-info_edit-button {
       align-self: center;
     }
   }
