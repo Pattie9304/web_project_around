@@ -83,6 +83,7 @@
     .grid__card {
       height: 361px;
       width: calc(100% - 10%);
+      max-width: 281px;
     }
 
     .grid__image {
