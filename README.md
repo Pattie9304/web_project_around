@@ -9,7 +9,7 @@ Patricia Higuera
 1.1 - En esta versiòn se incluye el diseño responsivo del proyecto. Las pròximas iteraciones incluirán la interactividad con Java Script.
 
 ## Enlace al proyecto
-https://pattie9304.github.io/web_project_homeland/
+https://pattie9304.github.io/web_project_around/
 
 ## Tecnologías
 HTML

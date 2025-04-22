@@ -91,7 +91,7 @@
   @media screen and (min-width: 320px) and (max-width: 768px) {
   
     .popup__button-cancel {
-      right: 285px;
+      right: 250px;
       top: 105px;
       font-size: 50px;
     }
