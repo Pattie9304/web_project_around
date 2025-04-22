@@ -76,6 +76,12 @@
   @media screen and (min-width: 320px) and (max-width: 768px) {
     .grid {
       width: 100%;
+      margin: auto;
       justify-content: center;
+    }
+
+    .grid__card {
+      height: 361px;
+      width: calc(100% - 10%);
     }
   }

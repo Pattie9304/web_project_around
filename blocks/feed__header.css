@@ -169,7 +169,8 @@
     }
   
     .feed__content-name {
-      font-size: 20px;
+      font-size: 22px;
+      text-align: center;
     }
   
     .feed__content-profession {
