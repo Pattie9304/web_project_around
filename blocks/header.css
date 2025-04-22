@@ -1,0 +1,16 @@
+.header
+{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto 200px;
+    padding-top:45px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #545454;
+}
+
+.header__logo
+{
+    width: 173px;
+    height: 33px;
+    object-fit: cover;
+}

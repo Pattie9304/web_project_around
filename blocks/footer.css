@@ -1,0 +1,20 @@
+.footer {
+    position: relative;
+    max-width: 880px;
+    margin: auto;
+    padding: 67px 0px 60px;
+    color: #545454;
+    font-family: "Inter-Regular";
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .footer {
+      margin-left: 90px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .footer {
+      margin-left: 30px;
+    }
+  }
