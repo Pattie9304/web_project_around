@@ -211,6 +211,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
     }
   
     .content-info_add-button{
@@ -222,23 +223,18 @@
       text-align: center;
     }
 
-    .content-info {
-      max-width: 415px;
-    }
-  
     .content-info_name
     {
       font-size: 22px;
       line-height: 28px;
-      grid-column: 1 / 7;
+      min-width: 150px;
     }
 
     .content-info_profession {
       font-size: 15px;
-      grid-column: 7;
     }
   
     .content-info_edit-button {
-      align-self: center;
+      align-self: end;
     }
   }
