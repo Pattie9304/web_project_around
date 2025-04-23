@@ -14,7 +14,7 @@
     align-content: center;
 }
 
-.feed__content-image
+.content-image
 {
     grid-column: 1;
     width: 120px;
@@ -37,7 +37,7 @@
     max-width: 415px;
   }
 
-.feed__content-info_name
+.feed__content-info
 {
     min-width: 415px;
     display: grid;
@@ -50,7 +50,7 @@
     color:#ffffff;
 }
 
-.feed__content-info_profession
+.content-info_profession
 {
     grid-column: 1 / 5;
     grid-row: 2;
@@ -62,7 +62,7 @@
     padding-bottom: 21px;
 }
 
-.feed__content-info_add-button {
+.content-info_add-button {
     display: flex;
     grid-column: 4;
     grid-row: 1;
@@ -78,12 +78,12 @@
     justify-content: center;
   }
   
-  .feed__content-info_add-button:hover {
+  .content-info_add-button:hover {
     color: rgba(255, 255, 255, 0.6);
     border-color: rgba(255, 255, 255, 0.6);
   }
   
-  .feed__content-info_edit-button {
+  .content-info_edit-button {
     grid-column: 7;
     width: 24px;
     height: 24px;
@@ -97,7 +97,7 @@
     border-width: thin;
   }
   
-  .feed__content-info_edit-button:hover {
+  .content-info_edit-button:hover {
     border-color: rgba(0, 0, 0, 0.8);
   }
   
@@ -113,7 +113,7 @@
       align-items: center;
     }
   
-    .feed__content-image{
+    .content-image{
       width: 120px;
       height: 120px;
     }
@@ -126,15 +126,15 @@
       justify-content: center;
     }
   
-    .feed__content-info_add-button {
+    .content-info_add-button {
       width: 80%;
     }
   
-    .feed__content-info_name {
+    .feed__content-info {
       font-size: 25px;
     }
   
-    .feed__content-info_edit-button {
+    .content-info_edit-button {
       align-self: center;
     }
   }
@@ -152,7 +152,7 @@
       align-items: center;
     }
   
-    .feed__content-image {
+    .content-image {
       width: 120px;
       height: 120px;
     }
@@ -164,20 +164,20 @@
       justify-content: center;
     }
   
-    .feed__content-info_add-button{
+    .content-info_add-button{
       width: 90%;
     }
   
-    .feed__content-info_name {
+    .feed__content-info {
       font-size: 22px;
       text-align: center;
     }
   
-    .feed__content-info_profession {
+    .content-info_profession {
       font-size: 15px;
     }
   
-    .feed__content-info_edit-button {
+    .content-info_edit-button {
       align-self: center;
     }
   }
