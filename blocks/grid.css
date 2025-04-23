@@ -72,11 +72,32 @@
       justify-content: center;
     }
   }
-  
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
     .grid {
       width: 100vw;
       max-width: 768px;
+      min-width: 320px;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .grid__card {
+      height: 361px;
+      width: calc(100% - 10%);
+      max-width: 281px;
+    }
+
+    .grid__image {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .grid {
+      width: 100%;
+      max-width: 480px;
       min-width: 320px;
       margin: auto;
       justify-content: center;
