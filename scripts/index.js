@@ -1,9 +1,9 @@
 const buttonEdit = document.querySelector(".feed__content-info_edit-button");
 const popup = document.querySelector(".popup");
 const buttonClose = document.querySelector(".popup__button-cancel");
-const nameInput = document.querySelector(".popup__name");
-const aboutInput = document.querySelector(".popup__about");
-let formElement = document.querySelector(".popup__container");
+const formElement = document.querySelector(".popup__container");
+let nameInput = document.querySelector(".popup__name");
+let aboutInput = document.querySelector(".popup__about");
 let profileName = document.querySelector(".feed__content-info_name");
 let profileAbout = document.querySelector(".feed__content-info_profession");
 
