@@ -35,6 +35,9 @@
 
   .content-info {
     max-width: 415px;
+    min-width: 373px;
+    font-size: 42px;
+    line-height: 48px;
   }
 
 .feed__content-info
