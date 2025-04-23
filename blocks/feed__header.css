@@ -49,6 +49,26 @@
     color: #fff;
   }
 
+  .content-info_edit-button {
+    grid-column: 7;
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    min-width: 24px;
+    align-self: end;
+    margin-bottom: 7px;
+    background-color: black;
+    background-image: url("../images/icon-edit-normal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid white;
+    border-width: thin;
+  }
+  
+  .content-info_edit-button:hover {
+    border-color: rgba(0, 0, 0, 0.8);
+  }
+
 .content-info_profession
 {
     grid-column: 1 / 5;
@@ -82,23 +102,6 @@
     border-color: rgba(255, 255, 255, 0.6);
   }
   
-  .content-info_edit-button {
-    grid-column: 7;
-    width: 24px;
-    height: 24px;
-    align-self: end;
-    margin-bottom: 7px;
-    background-color: black;
-    background-image: url("../images/icon-edit-normal.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: solid white;
-    border-width: thin;
-  }
-  
-  .content-info_edit-button:hover {
-    border-color: rgba(0, 0, 0, 0.8);
-  }
   
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     .feed {
