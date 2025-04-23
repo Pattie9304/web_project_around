@@ -82,7 +82,7 @@
   }
   
   .content-info_edit-button {
-    grid-column: 5;
+    grid-column: 7;
     width: 24px;
     height: 24px;
     align-self: end;
