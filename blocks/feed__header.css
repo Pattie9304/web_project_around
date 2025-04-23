@@ -221,9 +221,21 @@
       font-size: 22px;
       text-align: center;
     }
+
+    .content-info {
+      max-width: 415px;
+    }
   
+    .content-info_name
+    {
+      font-size: 22px;
+      line-height: 28px;
+      grid-column: 1 / 7;
+    }
+
     .content-info_profession {
       font-size: 15px;
+      grid-column: 7;
     }
   
     .content-info_edit-button {
