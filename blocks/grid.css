@@ -112,5 +112,6 @@
     .grid__image {
       width: 100%;
       object-fit: fill;
+      padding-bottom: 50px;
     }
   }
