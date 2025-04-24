@@ -54,6 +54,7 @@
   background-color: rgba(0, 0, 0, 0);
   right: 200px;
   top: 150px;
+  transform: rotate(45deg);
 }
 
 .popup__button_close:hover {
