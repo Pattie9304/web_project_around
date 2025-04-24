@@ -1,11 +1,11 @@
-const buttonEdit = document.querySelector(".content-info_edit-button");
+const buttonEdit = document.querySelector(".main__button_edit");
 const popup = document.querySelector(".popup");
 const buttonClose = document.querySelector(".popup__button-cancel");
 const formElement = document.querySelector(".popup__container");
 let nameInput = document.querySelector(".popup__name");
 let aboutInput = document.querySelector(".popup__about");
-let profileName = document.querySelector(".content-info_name");
-let profileAbout = document.querySelector(".content-info_profession");
+let profileName = document.querySelector(".main__paragraph_name");
+let profileAbout = document.querySelector(".main__paragraph_about");
 
 
 function openPopup() {
