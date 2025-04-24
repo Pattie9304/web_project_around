@@ -1,9 +1,9 @@
 const buttonEdit = document.querySelector(".main__button_edit");
 const popup = document.querySelector(".popup");
-const buttonClose = document.querySelector(".popup__button-cancel");
+const buttonClose = document.querySelector(".popup__button_close");
 const formElement = document.querySelector(".popup__container");
-let nameInput = document.querySelector(".popup__name");
-let aboutInput = document.querySelector(".popup__about");
+let nameInput = document.querySelector(".popup__input_name");
+let aboutInput = document.querySelector(".popup__input_about");
 let profileName = document.querySelector(".main__paragraph_name");
 let profileAbout = document.querySelector(".main__paragraph_about");
 
