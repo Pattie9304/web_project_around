@@ -145,8 +145,7 @@
   
     .feed {
       width: 100vw;
-      max-width: 768px;
-      min-width: 320px;
+      max-width: 481px;
     }
   
     .feed__content {
@@ -190,8 +189,7 @@
   
     .feed {
       width: 100%;
-      max-width: 480px;
-      min-width: 320px;
+      max-width: 320px;
     }
   
     .feed__content {
