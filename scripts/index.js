@@ -11,7 +11,7 @@ let profileAbout = document.querySelector(".main__paragraph_about");
 function openPopup() {
   nameInput.value = profileName.textContent;
   aboutInput.value = profileAbout.textContent;
-  popup.style = "display:block";
+  popup.style = "display:flex";
 }
 
 function closePopup() {
