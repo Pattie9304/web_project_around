@@ -74,28 +74,34 @@ opacity: 0.5;
   
   @media screen and (min-width: 320px) and (max-width: 585px) {
     .popup {
-      max-width: 280px;
+      width:100%;
+      max-width: calc(100% - 50%);
+      margin:0;
+
     }
     .popup__container
     {
-      max-width: 280px;
+      max-width: 160px;
     }
     .popup__subtitle
     {
-      width: 240px;
+      width: 116px;
       margin: 0 22px;
+      font-size: 18px;
+      padding: 17px 0 22.5px;
     }
     .popup__content
     {
-      width: 240px;
+      width: 100%;
+      margin: auto;
     }
     .popup__input
     {
-      width: 240px;
+      width: 100%;
+      margin: auto;
     }
-    .popup__input
-    {
-      width: 240px;
-    }
-
+    .popup__button_close {
+      right: 120px;
+      top: 180px;
+  }
 }
