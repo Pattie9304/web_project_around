@@ -22,7 +22,6 @@ p {
 @media screen and (min-width: 320px) and (max-width: 585px) {
 .page {
   width:100%;
-  max-width: 320px;
   min-width:280px;
 }
 }
