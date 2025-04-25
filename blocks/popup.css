@@ -77,18 +77,19 @@ opacity: 0.5;
     .popup {
       width:100%;
       margin:0;
-      max-width: calc(100% - 50%);
       align-content: center;
       justify-content: center;
       left: calc(100% - 75%);
     }
     .popup__container
     {
-      max-width: 160px;
+      width: 100%;
+      max-width: 280px;
     }
     .popup__subtitle
     {
-      width: 116px;
+      width: 100%;
+      max-width: 236px;
       margin: 0 22px;
       font-size: 18px;
       padding: 17px 0 22.5px;
@@ -101,10 +102,16 @@ opacity: 0.5;
     .popup__input
     {
       width: 100%;
-      margin: auto;
+      margin: 17px 0 22.5px;
     }
     .popup__button_close {
       right: 120px;
       top: 180px;
-  }
+    }
+    .popup__button_save {
+      width: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+      max-width: 240px;
+    }
 }
