@@ -104,8 +104,8 @@ opacity: 0.5;
       margin: 17px 0 22.5px;
     }
     .popup__button_close {
-      right: 120px;
-      top: 180px;
+      right: 15px;
+      top: 200px;
     }
     .popup__button_save {
       width: 100%;
