@@ -77,7 +77,7 @@ function startEditAdd(e) {
 function close() {
   popup.classList.toggle("popup_opened");
   popUpImg.removeAttribute("style");
-  form.removeAttribute("style");
+  formElement.removeAttribute("style");
 }
 
 buttonEdit.addEventListener("click", startEditAdd);
@@ -91,7 +91,7 @@ function saveChangeEdit(e) {
   close();
 }
 
-form.addEventListener("submit", saveChangeEdit);
+formElement.addEventListener("submit", saveChangeEdit);
 
 function cardsInitials() {
   initialCards.forEach((item) => {
@@ -137,7 +137,7 @@ function imagePopup(name, title) {
   popimg.alt = name;
   poptxt.textContent = name;
   popup.classList.toggle("popup_opened");
-  form.style.display = "none";
+  formElement.style.display = "none";
 }
 
 
