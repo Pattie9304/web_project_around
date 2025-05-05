@@ -26,7 +26,7 @@ const initialCards = [
   },
   {
     name: "Montañas Calvas",
-    link: "./images/montañas-calvas.png",
+    link: "./images/montanas-calvas.png",
   },
   {
     name: "Latemar",
