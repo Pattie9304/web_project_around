@@ -14,39 +14,67 @@
     </head>
     <body>
         <div class="page">
-            <div class="popup popup_opened">
-                <button class="popup__button popup__button_close">+
-                </button>
-                <form class="popup__container">
-                  <h1 class="popup__subtitle">Editar perfil</h1>
-                  <fieldset class="popup__content">
-                    <input class="popup__input popup__input_name" type="text" placeholder="Nombre" name="name" required>
-                    <input class="popup__input popup__input_about" type="text" placeholder="Acerca de mí" name="about" required>
-                  </fieldset>
-                  <fieldset class="popup__content">
-                    <button type="submit" class="popup__button popup__button_save">Guardar</button>
-                  </fieldset>
-                </form>
+          <div class="popup">
+            <button type="button" class="popup__button popup__button_close">
+              &#x1F7A9;
+            </button>
+            <div class="popup__images">
+              <div class="popup__content-image">
+                <img class="popup__image" src="#" alt="" />
               </div>
-
-            <header class="header">
-                <img src="./images/logo.svg" alt="Logotipo" class="header__logo">
-            </header>
+              <div class="popup__paragraph-content">
+                <p class="popup__paragraph"></p>
+              </div>
+            </div>
+            <form action="#" class="popup__container">
+              <h2 class="popup__subtitle">h</h2>
+              <fieldset class="popup__content">
+                <input
+                  type="text"
+                  class="popup__input popup__input_name"
+                  required
+                />
+                <input
+                  type="text"
+                  class="popup__input popup__input_about"
+                  required
+                />
+              </fieldset>
+              <fieldset class="popup__content">
+                <button type="submit" class="popup__button popup__button_save">
+                  Guardar
+                </button>
+                <button
+                  type="button"
+                  class="popup__button popup__button_add"
+                  disabled
+                >
+                  Guardar
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <header class="header">
+            <img src="./images/logo.svg" alt="Logotipo" class="header__logo">
+          </header>
             <main class="content">
                 <section class="main">
-                  
                     <div class="main__profile">
                       <div class="main__content-image">
                         <img class="main__profile-image" src="./images/feed__header_image.png" alt="Jacques Cousteau">
                       </div>
-                        
-                        <div class="main__content-paragraph">
+                      <div class="main__content-paragraph">
                             <h1  class="main__paragraph main__paragraph_name">Jacques Cousteau</h1>
                             <p class="main__paragraph main__paragraph_about">Explorador</p>    
-                            <button type="button" class="main__button main__button_edit"></button>
-                        </div>
-                        <button type="button" class="main__button main__button_add"> +</button>
+                            <button type="button" class="main__button main__button_edit">
+                              &#x1F58C;
+                            </button>
+                      </div>
+                      <button type="button" class="main__button main__button_add">
+                        &#x1F7A3;
+                      </button>
                     </div>
+                    <div class="main__gallery"></div>
                 </section>
                 <!--
                 <section class="main__gallery">
