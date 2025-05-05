@@ -39,7 +39,7 @@ const initialCards = [
   {
     name: "Lago di Braies",
     link: "./images/lago.jpg",
-  },
+  }
 ];
 
 function startEditAdd(e) {
