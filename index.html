@@ -34,6 +34,7 @@
             </header>
             <main class="content">
                 <section class="main">
+                  
                     <div class="main__profile">
                       <div class="main__content-image">
                         <img class="main__profile-image" src="./images/feed__header_image.png" alt="Jacques Cousteau">
@@ -42,17 +43,18 @@
                         <div class="main__content-paragraph">
                             <h1  class="main__paragraph main__paragraph_name">Jacques Cousteau</h1>
                             <p class="main__paragraph main__paragraph_about">Explorador</p>    
-                            <button class="main__button main__button_edit"></button>
+                            <button type="button" class="main__button main__button_edit"></button>
                         </div>
-                        <button class="main__button main__button_add"> +</button>
+                        <button type="button" class="main__button main__button_add"> +</button>
                     </div>
                 </section>
+                <!--
                 <section class="main__gallery">
                     <div class="main__gallery-card">
                       <img class="main__gallery-image" src="./images/main__gallery-image-01.jpg" alt="Valle de Yosemite">
                       <div class="main__gallery-content">
                         <p class="main__gallery-paragraph">Valle de Yosemite</p>
-                        <button class="main__button main__button_like">
+                        <button type="button" class="main__button main__button_like">
                           <img class="main__gallery-like" src="./images/grid__icon-normal.svg" alt="Boton de Like">
                         </button>
                       </div>
@@ -61,7 +63,7 @@
                       <img class="main__gallery-image" src="./images/main__gallery-image-02.png" alt="Lago Louise">
                       <div class="main__gallery-content">
                         <p class="main__gallery-paragraph">Lago Louise</p>
-                        <button class="main__button main__button_like">
+                        <button type="button" class="main__button main__button_like">
                           <img class="main__gallery-like" src="./images/grid__icon-normal.svg" alt="Boton de Like">
                         </button>
                       </div>
@@ -70,7 +72,7 @@
                       <img class="main__gallery-image" src="./images/main__gallery-image-03.png" alt="Montañas Calvas">
                       <div class="main__gallery-content">
                         <p class="main__gallery-paragraph">Montañas Calvas</p>
-                        <button class="main__button main__button_like">
+                        <button type="button" class="main__button main__button_like">
                           <img class="main__gallery-like" src="./images/grid__icon-normal.svg" alt="Boton de Like">
                         </button>
                       </div>
@@ -79,7 +81,7 @@
                       <img class="main__gallery-image" src="./images/main__gallery-image-04.png" alt="Latemar">
                       <div class="main__gallery-content">
                         <p class="main__gallery-paragraph">Latemar</p>
-                        <button class="main__button main__button_like">
+                        <button type="button" class="main__button main__button_like">
                           <img class="main__gallery-like" src="./images/grid__icon-normal.svg" alt="Boton de Like">
                         </button>
                       </div>
@@ -88,7 +90,7 @@
                       <img class="main__gallery-image" src="./images/main__gallery-image-05.png" alt="Vanois National Park">
                       <div class="main__gallery-content">
                         <p class="main__gallery-paragraph">Vanois National Park</p>
-                        <button class="main__button main__button_like">
+                        <button type="button" class="main__button main__button_like">
                           <img class="main__gallery-like" src="./images/grid__icon-normal.svg" alt="Boton de Like">
                         </button>
                       </div>
@@ -97,17 +99,27 @@
                       <img class="main__gallery-image" src="./images/main__gallery-image-06.png" alt="Lago di Braies">
                       <div class="main__gallery-content">
                         <p class="main__gallery-paragraph">Lago di Braies</p>
-                        <button class="main__button main__button_like">
+                        <button type="button" class="main__button main__button_like">
                           <img class="main__gallery-like" src="./images/grid__icon-normal.svg" alt="Boton de Like">
                         </button>
                       </div>
                     </div>
-                </section>
+                </section>-->
             </main>
             <footer class="footer">
                 <p class="footer__copyright">&copy; 2025. AroundThe U.S. - Patricia  Higuera</p>
             </footer>
         </div>
+        <template id="main__template">
+          <div class="main__gallery-card">
+            <img class="main__gallery-image">
+            <button type="button" class="main__button main__button_trash"></button>
+            <div class="main__gallery-content">
+              <p class="main__gallery-paragraph"></p>
+              <button type="button" class="main__button main__button_like"></button>
+            </div>
+          </div>
+        </template>
         <script src="./scripts/index.js"></script>
     </body>
 </html>
