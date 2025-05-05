@@ -7,13 +7,12 @@ const popUpButtonAdd = document.querySelector(".popup__button_add");
 const popup = document.querySelector(".popup");
 const formElement = document.querySelector(".popup__container");
 const popUpImg = document.querySelector(".popup__images");
-let popUpNameInput = document.querySelector(".popup__input_name");
-let popUpAboutInput = document.querySelector(".popup__input_about");
-const popUpTitle = document.querySelector(".popup__subtitle");
-
 const gallery = document.querySelector(".main__gallery");
-let profileName = document.querySelector(".main__paragraph_name");
-let profileAbout = document.querySelector(".main__paragraph_about");
+const profileName = document.querySelector(".main__paragraph_name");
+const profileAbout = document.querySelector(".main__paragraph_about");
+const popUpNameInput = document.querySelector(".popup__input_name");
+const popUpAboutInput = document.querySelector(".popup__input_about");
+const popUpTitle = document.querySelector(".popup__subtitle");
 
 const initialCards = [
   {
