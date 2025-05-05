@@ -32,8 +32,9 @@
   font-size: 40px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  right: 200px;
-  top: 150px;
+  right: 180px;
+  top: 100px;
+  transform: rotate(90deg);
 }
 
 .popup__container {
