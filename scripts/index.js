@@ -18,27 +18,27 @@ let profileAbout = document.querySelector(".main__paragraph_about");
 const initialCards = [
   {
     name: "Valle de Yosemite",
-    link: "./images/valle-yosemite.jpg",
+    link: "./images/yosemite.jpg",
   },
   {
     name: "Lago Louise",
-    link: "./images/lago-louise.png",
+    link: "./images/lake-louise.jpg",
   },
   {
     name: "Montañas Calvas",
-    link: "./images/montanas-calvas.png",
+    link: "./images/bald-mountains.jpg",
   },
   {
     name: "Latemar",
-    link: "./images/latemar.png",
+    link: "./images/latemar.jpg",
   },
   {
     name: "Vanois National Park",
-    link: "./images/vanois-national-park.png",
+    link: "./images/vanoise.jpg",
   },
   {
     name: "Lago di Braies",
-    link: "./images/lago-braies.png",
+    link: "./images/lago.jpg",
   },
 ];
 
