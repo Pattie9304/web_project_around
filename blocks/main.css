@@ -133,6 +133,7 @@
     margin: 30px 0;
     align-self: flex-end;
     background: url(../images/main__button_like-normal.svg) center no-repeat;
+    background-size: contain;
 }
 
 .main__button_like_active {
