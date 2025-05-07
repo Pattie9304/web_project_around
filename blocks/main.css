@@ -112,7 +112,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 250px;
-    margin: 30px 20px;
+    margin: auto;
   }
   
   .main__gallery-paragraph {
@@ -120,6 +120,7 @@
     font-weight: 800;
     font-size: 22px;
     margin: 0;
+    padding: 30px 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
