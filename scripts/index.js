@@ -162,22 +162,3 @@ function imagePopup(name, title) {
   popup.classList.toggle("popup_opened");
   form.style.display = "none";
 }
-
-
-/*
-
-function openPopup() {
-  popUpNameInput.value = profileName.textContent;
-  popUpAboutInput.value = profileAbout.textContent;
-  popup.style = "display:flex";
-}
-
-function closePopup() {
-  popup.style = "display:none";
-}
-
-buttonEdit.addEventListener("click", openPopup);
-buttonClose.addEventListener("click", closePopup);
-
-
-formElement.addEventListener("submit", saveChange);*/

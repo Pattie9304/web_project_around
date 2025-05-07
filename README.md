@@ -7,9 +7,14 @@ Patricia Higuera
 
 ## Versión
 1.1 - En esta versiòn se incluye el diseño responsivo del proyecto. Las pròximas iteraciones incluirán la interactividad con Java Script.
+
 1.2 - En esta versión se resuelven errores en código Java Script, versiones de responsive 380 y 768, así como interactividad de los botones.
+
 1.3 - En esta versión se soluciona el error de posicionamiento del pop up.
-1.4 - En esta versión se mejora el código y se cargan las imágenes automáticamente a través del código Java Script. 
+
+1.4 - En esta versión se mejora el código y se cargan las imágenes automáticamente a través del código Java Script.
+
+1.5 - En esta versión se resuelve el error de visualización en las tarjetas.
 
 ## Enlace al proyecto
 https://pattie9304.github.io/web_project_around/
