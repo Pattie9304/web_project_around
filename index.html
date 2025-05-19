@@ -26,29 +26,80 @@
                 <p class="popup__paragraph"></p>
               </div>
             </div>
-            <form action="#" class="popup__container">
-              <h2 class="popup__subtitle">h</h2>
+            <form class="popup__form" id="formEdit" novalidate>
+              <h2 class="popup__subtitle">Editar perfil</h2>
               <fieldset class="popup__content">
-                <input
-                  type="text"
-                  class="popup__input popup__input_name"
+                <label class="popup__field">
+                  <input
+                  type="text" id="name-input" placeholder="Por favor introduce tu nombre, tal como viene en tu acta de nacimiento" 
+                  class="popup__input popup__input_name" minlength="2" maxlength="40"
                   required
                 />
-                <input
-                  type="text"
-                  class="popup__input popup__input_about"
+                <span class="popup__input-error name-input-error"></span>
+                </label>
+                <label class="popup__field">
+                  <input
+                  type="text" id="about-input" placeholder="Por favor introduce tu nombre, tal como viene en tu acta de nacimiento" 
+                  class="popup__input popup__input_about" minlength="2" maxlength="400"
                   required
                 />
-              </fieldset>
-              <fieldset class="popup__content">
+                <span class="popup__input-error about-input-error"></span>
+                </label>
                 <button type="submit" class="popup__button popup__button_save">
                   Guardar
                 </button>
-                <button
-                  type="button"
-                  class="popup__button popup__button_add"
-                  disabled
-                >
+                <form class="popup__form" id="formAdd" novalidate>
+                  <h2 class="popup__subtitle">Nuevo lugar</h2>
+                  <fieldset class="popup__content">
+                    <label class="popup__field">
+                      <input
+                      type="text" id="title-input" placeholder="Por favor introduce el título"
+                      class="popup__input popup__input_title"                      
+                      minlength="2"
+                      maxlength="30"
+                      required
+                      />
+                      <span class="popup__input-error title-input-error"></span>
+                    </label>
+                    <label class="popup__field">
+                      <input
+                      type="url" id="url-input" placeholder="Por favor introduce la dirección del sitio web, tal como viene en la ventana del navegador"
+                      class="popup__input popup__input_url"
+                      required
+                      />
+                      <span class="popup__input-error url-input-error"></span>
+                    </label>
+                    <button
+                      type="button"
+                      class="popup__button popup__button_add"
+                      disabled
+                    >
+                    Guardar
+                  </button>
+              </fieldset>
+            </form>
+            <form class="popup__form" id="formAdd" novalidate>
+              <h2 class="popup__subtitle">Nuevo lugar</h2>
+              <fieldset class="popup__content">
+                <label class="popup__field">
+                  <input
+                    type="text" id="title-input" placeholder="Por favor introduce el título"
+                    class="popup__input popup__input_title"
+                    minlength="2"
+                    maxlength="30"
+                    required
+                  />
+                  <span class="popup__input-error title-input-error"></span>
+                </label>
+                <label class="popup__field">
+                  <input
+                    type="url" id="url-input" placeholder="Por favor introduce la dirección web donde se encuentra la imagen, tal como viene en la ventana del navegador"
+                    class="popup__input popup__input_url"
+                    required
+                  />
+                  <span class="popup__input-error url-input-error"></span>
+                </label>
+                <button type="submit" class="popup__button popup__button_add">
                   Guardar
                 </button>
               </fieldset>
@@ -57,29 +108,27 @@
           <header class="header">
             <img src="./images/logo.svg" alt="Logotipo" class="header__logo">
           </header>
-            <main class="content">
-                <section class="main">
-                    <div class="main__profile">
-                      <div class="main__content-image">
-                        <img class="main__profile-image" src="./images/feed__header_image.png" alt="Jacques Cousteau">
-                      </div>
-                      <div class="main__content-paragraph">
-                            <h1  class="main__paragraph main__paragraph_name">Jacques Cousteau</h1>
-                            <p class="main__paragraph main__paragraph_about">Explorador</p>    
-                            <button type="button" class="main__button main__button_edit">
-                              &#x1F58C;
-                            </button>
-                      </div>
-                      <button type="button" class="main__button main__button_add">
-                        &#x1F7A3;
-                      </button>
-                    </div>
-                    <div class="main__gallery"></div>
-                </section>
-            </main>
-            <footer class="footer">
-                <p class="footer__copyright">&copy; 2025. AroundThe U.S. - Patricia  Higuera</p>
-            </footer>
+          <main class="main">
+            <div class="main__profile">
+              <div class="main__content-image">
+                <img class="main__profile-image" src="./images/feed__header_image.png" alt="Jacques Cousteau">
+              </div>
+              <div class="main__content-paragraph">
+                <h1  class="main__paragraph main__paragraph_name">Jacques Cousteau</h1>
+                <p class="main__paragraph main__paragraph_about">Explorador</p>
+                <button type="button" class="main__button main__button_edit">
+                  &#x1F58C;
+                </button>
+              </div>
+              <button type="button" class="main__button main__button_add">
+                &#x1F7A3;
+              </button>
+            </div>
+            <div class="main__gallery"></div>
+          </main>
+          <footer class="footer">
+            <p class="footer__copyright">&copy; 2025. AroundThe U.S. - Patricia  Higuera</p>
+          </footer>
         </div>
         <template id="main__template">
           <div class="main__gallery-card">
@@ -92,5 +141,6 @@
           </div>
         </template>
         <script src="./scripts/index.js"></script>
+        <script src="./scripts/validate.js"></script>
     </body>
 </html>

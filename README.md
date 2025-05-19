@@ -6,7 +6,7 @@ Proyecto creado como parte del bootcamp de Triple Ten. Consistía en crear una p
 Patricia Higuera
 
 ## Versión
-1.1 - En esta versiòn se incluye el diseño responsivo del proyecto. Las pròximas iteraciones incluirán la interactividad con Java Script.
+1.1 - En esta versión se incluye el diseño responsivo del proyecto. Las pròximas iteraciones incluirán la interactividad con Java Script.
 
 1.2 - En esta versión se resuelven errores en código Java Script, versiones de responsive 380 y 768, así como interactividad de los botones.
 
@@ -16,11 +16,27 @@ Patricia Higuera
 
 1.5 - En esta versión se resuelve el error de visualización en las tarjetas.
 
+1.6 - En esta versión se pulieron los formularios de contacto, mejorando la experiencia de usuario y la accesibilidad. Esperando mejorar la experiencia en la navegación, para los usuarios que utilizan dispositivos de ayuda asistida.
+
 ## Enlace al proyecto
 https://pattie9304.github.io/web_project_around/
 
 ## Tecnologías
-HTML
+FIGMA
+HTML5
 CSS
-JS
-BEM
+Java Script (JS)
+Metodología BEM
+GitHub
+GitHub Pages
+
+##Funcionalidad
+La pagina es una galeria de arte, en la que se muestran los lugares de donde provienen nuestros colegas, reunidos en la ciudad Triple Ten iniciando con la bienvenida y descripción:
+-Se muestra el perfil de usuario
+-Sección de fotos
+-Edición de perfil
+-Borar tarjeta de imagen
+-Boton like funcional
+-Agregar nueva imagen
+
+
