@@ -30,7 +30,7 @@ Metodología BEM
 GitHub
 GitHub Pages
 
-##Funcionalidad
+## Funcionalidad
 La pagina es una galeria de arte, en la que se muestran los lugares de donde provienen nuestros colegas, reunidos en la ciudad Triple Ten iniciando con la bienvenida y descripción:
 -Se muestra el perfil de usuario
 -Sección de fotos
