@@ -114,6 +114,7 @@
 
 .popup__input_type_error {
   border-bottom: 1px solid #f00;
+  padding-bottom: 10px;
 }
 
 .popup__error_visible {
