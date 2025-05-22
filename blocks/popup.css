@@ -169,8 +169,8 @@
 
 @media screen and (min-width: 585px) and (max-width: 880px) {
   .popup__button_close {
-    left: calc(100% - 55px);
-    top: calc(100% - 610px);
+  right: -600px;
+  top: 190px;
   }
 
   .popup__images {
