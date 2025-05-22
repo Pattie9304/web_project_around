@@ -33,7 +33,7 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
   left: calc(100% - 230px);
-  top: calc(100% - 465px);
+  top: calc(100% - 600px);
   transform: rotate(90deg);
 }
 
@@ -170,7 +170,7 @@
 @media screen and (min-width: 585px) and (max-width: 880px) {
   .popup__button_close {
     left: calc(100% - 55px);
-    top: calc(100% - 590px);
+    top: calc(100% - 610px);
   }
 
   .popup__images {
