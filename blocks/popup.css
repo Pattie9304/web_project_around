@@ -32,8 +32,8 @@
   font-size: 40px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  left: calc(100% - 230px);
-  top: calc(100% - 600px);
+  left: 180px;
+  top: 110px;
   transform: rotate(90deg);
 }
 
