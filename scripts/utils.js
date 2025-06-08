@@ -21,7 +21,6 @@ const openEditAdd = (e) => {
     popup.classList.toggle("popup_opened");
     formAdd.classList.toggle("popup__item-hidden");
     popimg.classList.toggle("popup__item-hidden");
-    console.log("popup_opened");
   } else if (butClass.contains("main__button_add")) {
     popup.classList.toggle("popup_opened");
     formEd.classList.toggle("popup__item-hidden");
