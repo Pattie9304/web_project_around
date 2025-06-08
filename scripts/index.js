@@ -2,6 +2,7 @@ import { Card, FormCard } from "./card.js";
 import { FormValidator } from "./formValidator.js";
 
 const gallery = document.querySelector(".main__gallery");
+
 const validationConfig = {
   formSelector: ".popup__form",
   inputSelector: ".popup__input",
@@ -20,23 +21,23 @@ const initialCards = [
   },
   {
     name: "Lago Louise",
-    link: "./images/lago-louise.png",
+    link: "./images/lago-louise.jpg",
   },
   {
     name: "Montañas Calvas",
-    link: "./images/montañas-calvas.png",
+    link: "./images/montañas-calvas.jpg",
   },
   {
     name: "Latemar",
-    link: "./images/latemar.png",
+    link: "./images/latemar.jpg",
   },
   {
     name: "Vanois National Park",
-    link: "./images/vanois-national-park.png",
+    link: "./images/vanois-national-park.jpg",
   },
   {
     name: "Lago di Braies",
-    link: "./images/lago-braies.png",
+    link: "./images/lago-braies.jpg",
   },
 ];
 
