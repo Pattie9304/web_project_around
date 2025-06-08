@@ -10,11 +10,21 @@
   align-content: center;
   z-index: 1;
   color: #000;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
   
 .popup_opened {
   display: block;
+}
+
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+  align-items: flex-end;
 }
 
 .popup__button {
@@ -28,16 +38,16 @@
 }
 
 .popup__button_close {
-  position: absolute;
-  right: 190px;
-  top: 210px;
-  font-size: 40px;
-  border: none;
+  background: url(../images/close-Icon.svg) center no-repeat;
   background-color: rgba(0, 0, 0, 0);
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  border: none;
 }
 
 .popup__form {
-  margin: auto;
+  margin: 10px 50px;
   max-width: 430px;
   background-color: #fff;
   border-radius: 10px;
@@ -121,22 +131,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 585px) {
-  .popup__button_close {
-    right: 0px;
-    top: 190px;
-  }
-
-  .popup__container {
-    max-width: 280px;
-  }
-
-  .popup__form {
-    min-width: 240px;
-    max-width: calc(100% - 80px);
-  }
-
-  .popup__images {
-    margin: 35px auto 0;
+   .popup__container {
+    max-width: 310px;
+    height: 400px;
   }
 
   .popup__image {
@@ -147,7 +144,12 @@
   .popup__paragraph-content {
     width: 300px;
   }
-  
+
+  .popup__form {
+    width: 300px;
+    margin:auto;
+  }
+
   .popup__subtitle {
     width: 100%;
     max-width: calc(100% - 46px);
@@ -160,20 +162,15 @@
   }
 
   .popup__input {
-     width: 100%;
-    max-width: 100%;
+     width: 240px;
     padding: 10px;
   }
 }
 
 @media screen and (min-width: 585px) and (max-width: 880px) {
-  .popup__button_close {
-    right: 0px;
-    top: 190px;
-  }
-
-  .popup__images {
-    margin: 35px auto 0;
+  .popup__container {
+    max-width: 310px;
+    height: 400px;
   }
 
   .popup__image {
@@ -184,13 +181,10 @@
   .popup__paragraph-content {
     width: 300px;
   }
-
-  .popup__container {
-    max-width: 280px;
-  }
-  
+ 
   .popup__form {
-    max-width: calc(100% - 80px);
+    max-width: 400px;
+    margin: auto;
   }
 
   .popup__subtitle {
@@ -205,53 +199,7 @@
   }
 
   .popup__input {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-  }
-}
-
-@media screen and (min-width: 880px) and (max-width: 1024px) {
-  .popup__button_close {
-    right: 0px;
-    top: 190px;
-  }
-
-  .popup__images {
-    margin: 35px auto 0;
-  }
-
-  .popup__image {
-    width: 300px;
-    height: 280px;
-  }
-
-  .popup__paragraph-content {
-    width: 300px;
-  }
-
-  .popup__container {
-    max-width: 280px;
-  }
-  
-  .popup__form {
-    max-width: calc(100% - 80px);
-  }
-
-  .popup__subtitle {
-    width: 100%;
-    max-width: calc(100% - 46px);
-    margin: 0 22px;
-  }
-
-  .popup__content {
-    width: 100%;
-    max-width: calc(100% - 46px);
-  }
-
-  .popup__input {
-    width: 100%;
-    max-width: 100%;
+    width: 240px;
     padding: 10px;
   }
 }

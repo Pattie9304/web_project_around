@@ -15,67 +15,69 @@
     <body>
         <div class="page">
           <div class="popup">
-            <button type="button" class="popup__button popup__button_close">
-              &#x1F7A9;
-            </button>
-            <div class="popup__images">
-              <div class="popup__content-image">
-                <img class="popup__image" src="#" alt="" />
+            <div class="popup__container">
+              <button type="button" class="popup__button popup__button_close">
+                &#x1F7A9;
+              </button>
+              <div class="popup__images">
+                <div class="popup__content-image">
+                  <img class="popup__image" src="#" alt="" />
+                </div>
+                <div class="popup__paragraph-content">
+                  <p class="popup__paragraph"></p>
+                </div>
               </div>
-              <div class="popup__paragraph-content">
-                <p class="popup__paragraph"></p>
-              </div>
+              <form class="popup__form form-edit" id="formEdit" novalidate>
+                <h2 class="popup__subtitle">Editar perfil</h2>
+                <fieldset class="popup__content">
+                  <label class="popup__field">
+                    <input
+                    type="text" id="name-input" placeholder="Por favor introduce tu nombre, tal como viene en tu acta de nacimiento" 
+                    class="popup__input popup__input_name" minlength="2" maxlength="40"
+                    required
+                  />
+                  <span class="popup__input-error name-input-error"></span>
+                  </label>
+                  <label class="popup__field">
+                    <input
+                    type="text" id="about-input" placeholder="Por favor introduce información acerca de ti" 
+                    class="popup__input popup__input_about" minlength="2" maxlength="400"
+                    required
+                  />
+                  <span class="popup__input-error about-input-error"></span>
+                  </label>
+                  <button type="submit" class="popup__button popup__button_save">
+                    Guardar
+                  </button>
+                </fieldset>
+              </form>
+              <form class="popup__form form-add" id="formAdd" novalidate>
+                <h2 class="popup__subtitle">Nuevo lugar</h2>
+                <fieldset class="popup__content">
+                  <label class="popup__field">
+                    <input
+                      type="text" id="title-input" placeholder="Por favor introduce el título"
+                      class="popup__input popup__input_title"
+                      minlength="2"
+                      maxlength="30"
+                      required
+                    />
+                    <span class="popup__input-error title-input-error"></span>
+                  </label>
+                  <label class="popup__field">
+                    <input
+                      type="url" id="url-input" placeholder="Por favor introduce la dirección web donde se encuentra la imagen, tal como viene en la ventana del navegador"
+                      class="popup__input popup__input_url"
+                      required
+                    />
+                    <span class="popup__input-error url-input-error"></span>
+                  </label>
+                  <button type="submit" class="popup__button popup__button_add">
+                    Guardar
+                  </button>
+                </fieldset>
+              </form>
             </div>
-            <form class="popup__form form-edit" id="formEdit" novalidate>
-              <h2 class="popup__subtitle">Editar perfil</h2>
-              <fieldset class="popup__content">
-                <label class="popup__field">
-                  <input
-                  type="text" id="name-input" placeholder="Por favor introduce tu nombre, tal como viene en tu acta de nacimiento" 
-                  class="popup__input popup__input_name" minlength="2" maxlength="40"
-                  required
-                />
-                <span class="popup__input-error name-input-error"></span>
-                </label>
-                <label class="popup__field">
-                  <input
-                  type="text" id="about-input" placeholder="Por favor introduce información acerca de ti" 
-                  class="popup__input popup__input_about" minlength="2" maxlength="400"
-                  required
-                />
-                <span class="popup__input-error about-input-error"></span>
-                </label>
-                <button type="submit" class="popup__button popup__button_save">
-                  Guardar
-                </button>
-              </fieldset>
-            </form>
-            <form class="popup__form form-add" id="formAdd" novalidate>
-              <h2 class="popup__subtitle">Nuevo lugar</h2>
-              <fieldset class="popup__content">
-                <label class="popup__field">
-                  <input
-                    type="text" id="title-input" placeholder="Por favor introduce el título"
-                    class="popup__input popup__input_title"
-                    minlength="2"
-                    maxlength="30"
-                    required
-                  />
-                  <span class="popup__input-error title-input-error"></span>
-                </label>
-                <label class="popup__field">
-                  <input
-                    type="url" id="url-input" placeholder="Por favor introduce la dirección web donde se encuentra la imagen, tal como viene en la ventana del navegador"
-                    class="popup__input popup__input_url"
-                    required
-                  />
-                  <span class="popup__input-error url-input-error"></span>
-                </label>
-                <button type="submit" class="popup__button popup__button_add">
-                  Guardar
-                </button>
-              </fieldset>
-            </form>
           </div>
           <header class="header">
             <img src="./images/logo.svg" alt="Logotipo" class="header__logo">
