@@ -1,4 +1,4 @@
-import { reset } from "./FormValidator.js";
+import { reset } from "./formValidator.js";
 import { add } from "./index.js";
 
 const butEdit = document.querySelector(".main__button_edit");

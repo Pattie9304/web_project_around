@@ -1,5 +1,5 @@
-import { Card, FormCard } from "./Card.js";
-import { FormValidator } from "./FormValidator.js";
+import { Card, FormCard } from "./card.js";
+import { FormValidator } from "./formValidator.js";
 
 const gallery = document.querySelector(".main__gallery");
 const validationConfig = {
