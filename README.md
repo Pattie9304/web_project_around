@@ -2,6 +2,18 @@
 ## Descripción del Proyecto
 Proyecto creado como parte del bootcamp de Triple Ten. Consistía en crear una página web sencilla. Estilo OnePage, informativa y con interacciòn sencilla. Se siguió una organización de archivos plana con la metodología BEM.
 
+## Funcionalidad
+La pagina es una galeria de arte, en la que se muestran los lugares de donde provienen nuestros colegas, reunidos en la ciudad Triple Ten iniciando con la bienvenida y descripción:
+-Se muestra el perfil de usuario
+-Sección de fotos
+-Edición de perfil
+-Borar tarjeta de imagen
+-Boton like funcional
+-Agregar nueva imagen
+
+## Enlace al proyecto
+https://pattie9304.github.io/web_project_around/
+
 ## Autor
 Patricia Higuera
 
@@ -18,25 +30,18 @@ Patricia Higuera
 
 1.6 - En esta versión se pulieron los formularios de contacto, mejorando la experiencia de usuario y la accesibilidad. Esperando mejorar la experiencia en la navegación, para los usuarios que utilizan dispositivos de ayuda asistida.
 
-## Enlace al proyecto
-https://pattie9304.github.io/web_project_around/
+1.7 - En esta versión se está reorganizando el código para que quede en módulos.
 
 ## Tecnologías
 FIGMA
 HTML5
 CSS
+Flexbox
+Position
 Java Script (JS)
 Metodología BEM
 GitHub
 GitHub Pages
 
-## Funcionalidad
-La pagina es una galeria de arte, en la que se muestran los lugares de donde provienen nuestros colegas, reunidos en la ciudad Triple Ten iniciando con la bienvenida y descripción:
--Se muestra el perfil de usuario
--Sección de fotos
--Edición de perfil
--Borar tarjeta de imagen
--Boton like funcional
--Agregar nueva imagen
 
 
