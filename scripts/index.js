@@ -61,3 +61,4 @@ formElements.forEach((formElement) => {
 });
 
 export { cardsAdd as add, validationConfig as config, formValidators };
+

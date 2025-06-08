@@ -1,6 +1,3 @@
-import { reset } from "./formValidator.js";
-import { add } from "./index.js";
-
 const butEdit = document.querySelector(".main__button_edit");
 const butAdd = document.querySelector(".main__button_add");
 const butClose = document.querySelector(".popup__button_close");
@@ -15,12 +12,16 @@ const inpAbout = document.querySelector(".popup__input_about");
 const inpTitle = document.querySelector(".popup__input_title");
 const inpUrl = document.querySelector(".popup__input_url");
 
+import { reset } from "./formValidator.js";
+import { add } from "./index.js";
+
 const openEditAdd = (e) => {
   const butClass = e.target.classList;
   if (butClass.contains("main__button_edit")) {
     popup.classList.toggle("popup_opened");
     formAdd.classList.toggle("popup__item-hidden");
     popimg.classList.toggle("popup__item-hidden");
+    console.log("popup_opened");
   } else if (butClass.contains("main__button_add")) {
     popup.classList.toggle("popup_opened");
     formEd.classList.toggle("popup__item-hidden");
