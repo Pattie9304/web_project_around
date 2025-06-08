@@ -1,7 +1,6 @@
 import { imagePopup } from "./utils.js";
 
-class Card
-{
+class Card {
  constructor(data, cardSelector) {
     this._name = data.name;
     this._link = data.link;

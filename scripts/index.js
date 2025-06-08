@@ -10,6 +10,7 @@ const validationConfig = {
   inputErrorClass: "popup__input_type_error",
   errorClass: "popup__error_visible",
 };
+
 const formElements = document.querySelectorAll(validationConfig.formSelector);
 const formValidators = [];
 const initialCards = [
