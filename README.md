@@ -30,7 +30,9 @@ Patricia Higuera
 
 1.6 - En esta versión se pulieron los formularios de contacto, mejorando la experiencia de usuario y la accesibilidad. Esperando mejorar la experiencia en la navegación, para los usuarios que utilizan dispositivos de ayuda asistida.
 
-1.7 - En esta versión se está reorganizando el código para que quede en módulos.
+1.7 - En esta versión se está reorganizó el código para que quedara en módulos.
+
+1.8 - En esta versión se reorganizó el código para que se pudiera reutilizar el código. Se creó la carpeta de components, constants y se borró la de scripts.
 
 ## Tecnologías
 FIGMA
