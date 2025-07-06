@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Patricia Higuera - Exploradora" />
+        <meta name="author" content="Patricia Higuera" />
+        <meta name="keywords" content="Patricia Higuera, Exploradora, Proyecto, HTML, CSS, Java Script, Popup, Modal, POO, API, Valle de Yosemite, Lago Louise, Montañas Calvas, Latemar, Vanoise National Park, Lago di Braies" />
+        <title>Patricia Higuera - Exploradora</title>
+    
+        <link rel="stylesheet" href="./pages/index.css" />
+        
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <body>
+        <div class="page">
+          <div class="popup">
+            <div class="popup__container">
+              <button type="button" class="popup__button popup__button_close">
+                &#x1F7A9;
+              </button>
+              <div class="popup__images">
+                <div class="popup__content-image">
+                  <img class="popup__image" src="#" alt="" />
+                </div>
+                <div class="popup__paragraph-content">
+                  <p class="popup__paragraph"></p>
+                </div>
+              </div>
+              <form class="popup__form form-edit" id="formEdit" novalidate>
+                <h2 class="popup__subtitle">Editar perfil</h2>
+                <fieldset class="popup__content">
+                  <label class="popup__field">
+                    <input
+                    type="text" id="name-input" placeholder="Por favor introduce tu nombre, tal como viene en tu acta de nacimiento" 
+                    class="popup__input popup__input_name" minlength="2" maxlength="40"
+                    required
+                  />
+                  <span class="popup__input-error name-input-error"></span>
+                  </label>
+                  <label class="popup__field">
+                    <input
+                    type="text" id="about-input" placeholder="Por favor introduce información acerca de ti" 
+                    class="popup__input popup__input_about" minlength="2" maxlength="400"
+                    required
+                  />
+                  <span class="popup__input-error about-input-error"></span>
+                  </label>
+                  <label class="popup__field">
+                    <input
+                    type="url" id="profile-image-input" placeholder="Por favor introduce la dirección web donde se encuentra la imagen, tal como viene en la ventana del navegador" 
+                    class="popup__input popup__input_url" required
+                  />
+                  <span class="popup__input-error about-input-error"></span>
+                  </label>
+                  <button type="submit" class="popup__button popup__button_save">
+                    Guardar
+                  </button>
+                </fieldset>
+              </form>
+              <form class="popup__form form-add" id="formAdd" novalidate>
+                <h2 class="popup__subtitle">Nuevo lugar</h2>
+                <fieldset class="popup__content">
+                  <label class="popup__field">
+                    <input
+                      type="text" id="title-input" placeholder="Por favor introduce el título"
+                      class="popup__input popup__input_title"
+                      minlength="2"
+                      maxlength="30"
+                      required
+                    />
+                    <span class="popup__input-error title-input-error"></span>
+                  </label>
+                  <label class="popup__field">
+                    <input
+                      type="url" id="url-input" placeholder="Por favor introduce la dirección web donde se encuentra la imagen, tal como viene en la ventana del navegador"
+                      class="popup__input popup__input_url"
+                      required
+                    />
+                    <span class="popup__input-error url-input-error"></span>
+                  </label>
+                  <button type="submit" class="popup__button popup__button_add">
+                    Guardar
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <header class="header">
+            <img src="./images/logo.svg" alt="Logotipo" class="header__logo">
+          </header>
+          <main class="main">
+            <div class="main__profile">
+              <div class="main__content-image">
+                <img class="main__profile-image" src="" alt="Jacques Cousteau">
+              </div>
+              <div class="main__content-paragraph">
+                <h1  class="main__paragraph main__paragraph_name"></h1>
+                <p class="main__paragraph main__paragraph_about"></p>
+                <button type="button" class="main__button main__button_edit">
+                  &#x1F58C;
+                </button>
+              </div>
+              <button type="button" class="main__button main__button_add">
+                &#x1F7A3;
+              </button>
+            </div>
+            <div class="main__gallery"></div>
+          </main>
+          <footer class="footer">
+            <p class="footer__copyright">&copy; 2025. AroundThe U.S. - Patricia  Higuera</p>
+          </footer>
+        </div>
+        <template id="main__template">
+          <div class="main__gallery-card">
+            <img class="main__gallery-image">
+            <button type="button" class="main__button main__button_trash"></button>
+            <div class="main__gallery-content">
+              <p class="main__gallery-paragraph"></p>
+              <button type="button" class="main__button main__button_like"></button>
+            </div>
+          </div>
+        </template>
+        <script type="module" src="./pages/index.js"></script>
+    </body>
+</html>

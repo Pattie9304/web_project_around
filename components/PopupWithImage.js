@@ -1,19 +1,16 @@
-import Popup from "./Popup.js";
-import { formAdd, formEd } from "../constants/utils.js";
-
-export default class PopupWithImage extends Popup {
-  constructor(popupSelector, popimage, poptext) {
+import { Popup } from "./Popup.js";
+export class PopupWithImage extends Popup {
+  constructor(popupSelector) {
     super(popupSelector);
-    this._imageElement = popimage;
-    this._captionElement = poptext;
+    this._popupImage = this._popup.querySelector(".popup__photo-link");
+    this._popupCaption = this._popup.querySelector(".popup__photo-name");
   }
 
-  open(src, caption) {
-    this._imageElement.src = src;
-    this._imageElement.alt = caption;
-    this._captionElement.textContent = caption;
-    formAdd.classList.toggle("popup__item-hidden");
-    formEd.classList.toggle("popup__item-hidden");
-    super.open();
+  // Método público para abrir el popup con la imagen y la leyenda
+  open(link, name) {
+    this._popupImage.src = link;
+    this._popupImage.alt = name;
+    this._popupCaption.textContent = name;
+    super.open(); // Llama al método open() de la clase padre
   }
 }

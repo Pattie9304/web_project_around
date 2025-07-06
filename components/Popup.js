@@ -1,33 +1,40 @@
-import { closePop, butClose } from "../constants/utils.js";
-
-export default class Popup {
+export class Popup {
   constructor(popupSelector) {
-    this._popupSelector = popupSelector;
+    this._popup = document.querySelector(popupSelector);
+    this._handleEscClose = this._handleEscClose.bind(this);
   }
-  _handleEscClose(e) {
-    if (e.key === "Escape") {
-      closePop();
+
+  // Método público para abrir el popup
+  open() {
+    this._popup.classList.add("popup__show");
+    document.addEventListener("keydown", this._handleEscClose);
+  }
+
+  // Método público para cerrar el popup
+  close() {
+    this._popup.classList.remove("popup__show");
+    document.removeEventListener("keydown", this._handleEscClose);
+  }
+
+  // Método privado para manejar el cierre del popup al presionar Esc
+  _handleEscClose(evt) {
+    if (evt.key === "Escape") {
+      this.close();
     }
   }
 
-  open() {
-    this._popupSelector.classList.add("popup_opened");
-  }
-  close() {
-    closePop();
-  }
+  // Método público para agregar los detectores de eventos
   setEventListeners() {
-    butClose.addEventListener("click", () => {
+    // Cerrar el popup al hacer clic en el icono de cerrar
+    this._popup.querySelector(".popup__close").addEventListener("click", () => {
       this.close();
     });
-    document.addEventListener("click", (e) => {
-      const popClass = e.target.classList;
-      if (popClass.contains("popup_opened")) {
+
+    // Cerrar el popup al hacer clic en el área sombreada
+    this._popup.addEventListener("mousedown", (evt) => {
+      if (evt.target.classList.contains("popup__show")) {
         this.close();
       }
-    });
-    document.addEventListener("keydown", (e) => {
-      this._handleEscClose(e);
     });
   }
 }

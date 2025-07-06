@@ -5,115 +5,194 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Patricia Higuera - Exploradora" />
         <meta name="author" content="Patricia Higuera" />
-        <meta name="keywords" content="Patricia Higuera, Exploradora, Valle de Yosemite, Lago Louise, Montañas Calvas, Latemar, Vanoise National Park, Lago di Braies" />
+        <meta name="keywords" content="Patricia Higuera, Exploradora, Proyecto, HTML, CSS, Java Script, Popup, Modal, POO, API, Valle de Yosemite, Lago Louise, Montañas Calvas, Latemar, Vanoise National Park, Lago di Braies" />
         <title>Patricia Higuera - Exploradora</title>
     
         <link rel="stylesheet" href="./pages/index.css" />
         
         <link rel="shortcut icon" href="favicon.ico" />
     </head>
-    <body>
-        <div class="page">
-          <div class="popup">
-            <div class="popup__container">
-              <button type="button" class="popup__button popup__button_close">
-                &#x1F7A9;
-              </button>
-              <div class="popup__images">
-                <div class="popup__content-image">
-                  <img class="popup__image" src="#" alt="" />
-                </div>
-                <div class="popup__paragraph-content">
-                  <p class="popup__paragraph"></p>
-                </div>
-              </div>
-              <form class="popup__form form-edit" id="formEdit" novalidate>
-                <h2 class="popup__subtitle">Editar perfil</h2>
-                <fieldset class="popup__content">
-                  <label class="popup__field">
-                    <input
-                    type="text" id="name-input" placeholder="Por favor introduce tu nombre, tal como viene en tu acta de nacimiento" 
-                    class="popup__input popup__input_name" minlength="2" maxlength="40"
-                    required
-                  />
-                  <span class="popup__input-error name-input-error"></span>
-                  </label>
-                  <label class="popup__field">
-                    <input
-                    type="text" id="about-input" placeholder="Por favor introduce información acerca de ti" 
-                    class="popup__input popup__input_about" minlength="2" maxlength="400"
-                    required
-                  />
-                  <span class="popup__input-error about-input-error"></span>
-                  </label>
-                  <button type="submit" class="popup__button popup__button_save">
-                    Guardar
-                  </button>
-                </fieldset>
-              </form>
-              <form class="popup__form form-add" id="formAdd" novalidate>
-                <h2 class="popup__subtitle">Nuevo lugar</h2>
-                <fieldset class="popup__content">
-                  <label class="popup__field">
-                    <input
-                      type="text" id="title-input" placeholder="Por favor introduce el título"
-                      class="popup__input popup__input_title"
-                      minlength="2"
-                      maxlength="30"
-                      required
-                    />
-                    <span class="popup__input-error title-input-error"></span>
-                  </label>
-                  <label class="popup__field">
-                    <input
-                      type="url" id="url-input" placeholder="Por favor introduce la dirección web donde se encuentra la imagen, tal como viene en la ventana del navegador"
-                      class="popup__input popup__input_url"
-                      required
-                    />
-                    <span class="popup__input-error url-input-error"></span>
-                  </label>
-                  <button type="submit" class="popup__button popup__button_add">
-                    Guardar
-                  </button>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-          <header class="header">
-            <img src="./images/logo.svg" alt="Logotipo" class="header__logo">
-          </header>
-          <main class="main">
-            <div class="main__profile">
-              <div class="main__content-image">
-                <img class="main__profile-image" src="./images/feed__header_image.png" alt="Jacques Cousteau">
-              </div>
-              <div class="main__content-paragraph">
-                <h1  class="main__paragraph main__paragraph_name">Jacques Cousteau</h1>
-                <p class="main__paragraph main__paragraph_about">Explorador</p>
-                <button type="button" class="main__button main__button_edit">
-                  &#x1F58C;
-                </button>
-              </div>
-              <button type="button" class="main__button main__button_add">
-                &#x1F7A3;
-              </button>
-            </div>
-            <div class="main__gallery"></div>
-          </main>
-          <footer class="footer">
-            <p class="footer__copyright">&copy; 2025. AroundThe U.S. - Patricia  Higuera</p>
-          </footer>
+<body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/logo.png"
+          alt="Logo del proyecto"
+          class="header__logo"
+        />
+      </header>
+      <section class="profile">
+        <div class="profile__avatar-container">
+          <img class="profile__avatar" src=" " alt="Avatar" />
+          <button class="profile__edit-avatar" aria-label="Editar Avatar">
+            <img
+              src="./images/edit_avatar.png"
+              alt="Botón para editar Avatar"
+            />
+          </button>
         </div>
-        <template id="main__template">
-          <div class="main__gallery-card">
-            <img class="main__gallery-image">
-            <button type="button" class="main__button main__button_trash"></button>
-            <div class="main__gallery-content">
-              <p class="main__gallery-paragraph"></p>
-              <button type="button" class="main__button main__button_like"></button>
+        <div class="profile__content">
+          <div class="profile__info">
+            <p class="profile__name"></p>
+            <p class="profile__about"></p>
+          </div>
+          <button class="profile__edit-button" aria-label="Editar perfil">
+            <img
+              src="./images/Edit-Button.png"
+              alt="Botón para editar perfil"
+            />
+          </button>
+        </div>
+        <button class="profile__add-button" aria-label="Agregar nueva imagen">
+          <img
+            src="./images/Add-Button.png"
+            alt="Botón para agregar nueva imagen"
+          />
+        </button>
+      </section>
+      <main class="main">
+        <div class="elements__container"></div>
+        <!-- Plantilla de card-->
+        <template class="template__card" id="template__card">
+          <div class="element">
+            <button class="element__photo-trash"></button>
+            <img src="" alt="" class="element__photo-link" />
+            <div class="element__info">
+              <h2 class="element__photo-name"></h2>
+              <button class="element__photo-like"></button>
             </div>
           </div>
         </template>
-        <script type="module" src="./pages/index.js"></script>
-    </body>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy;2025 Patricia Higuera</p>
+      </footer>
+    </div>
+    <!-- Agrandar una carta-->
+    <div class="popup" id="popup-show-card">
+      <div class="popup__overlay"></div>
+      <div class="popup__photo-content">
+        <img
+          class="popup__close"
+          src="./images/Close Icon.png"
+          alt="boton para cerrar"
+          id="popup-close-card"
+          required
+        />
+        <img src=" " alt="" class="popup__photo-link" />
+        <h3 class="popup__photo-name"></h3>
+      </div>
+    </div>
+    <!-- Insertar una carta-->
+    <div class="popup" id="popup-add-card">
+      <div class="popup__overlay"></div>
+      <form class="form popup__form" id="form-addCard" novalidate>
+        <img
+          class="popup__close"
+          src="./images/Close Icon.png"
+          alt="boton para cerrar"
+          id="close-form"
+          required
+        />
+        <h2 class="form__title">Nuevo Lugar</h2>
+        <input
+          class="form__input"
+          type="text"
+          id="input-card-name"
+          placeholder="Titulo"
+          minlength="2"
+          maxlength="30"
+          name="name"
+          required
+        />
+        <span class="input-error input-card-name-error"></span>
+        <input
+          class="form__input"
+          type="url"
+          id="input-card-link"
+          placeholder="Enlace a la imagen"
+          name="link"
+          required
+        />
+        <span class="input-error input-card-link-error"></span>
+        <button type="submit" class="form__submit" disabled>Crear</button>
+      </form>
+    </div>
+    <!-- Modificar nombre y hobbie-->
+    <div class="popup" id="popup-profile">
+      <div class="popup__overlay"></div>
+      <form class="form popup__form" id="form-profile" novalidate>
+        <img
+          class="popup__close"
+          src="./images/Close Icon.png"
+          alt="boton para cerrar"
+          id="close-profile"
+        />
+        <h2 class="form__title">Editar perfil</h2>
+        <input
+          type="text"
+          class="form__input"
+          id="input-name"
+          name="name"
+          placeholder="Nombre"
+          minlength="2"
+          maxlength="40"
+          required
+        />
+        <span class="input-error input-name-error"></span>
+        <input
+          type="text"
+          class="form__input"
+          id="input-about"
+          name="about"
+          placeholder="Acerca de mí"
+          minlength="2"
+          maxlength="200"
+          required
+        />
+        <span class="input-error input-job-error"></span>
+        <button type="submit" class="form__submit" disabled>Guardar</button>
+      </form>
+    </div>
+    <!-- Ventana emergente de eliminar-->
+    <div class="popup" id="popup-delete">
+      <div class="popup__overlay"></div>
+      <form class="form popup__form" id="form-delete" novalidate>
+        <img
+          class="popup__close"
+          src="./images/Close Icon.png"
+          alt="Cerrar"
+          id="popup__close-delete"
+        />
+        <p class="form__title">¿Estás seguro/a?</p>
+        <span class="input-error input-card-error"></span>
+        <button type="submit" class="form__submit form__delete">Si</button>
+      </form>
+    </div>
+
+    <!-- Editar foto de avatar-->
+    <div class="popup" id="popup-avatar">
+      <div class="popup__overlay"></div>
+      <form class="form popup__form" id="form-avatar" novalidate>
+        <img
+          class="popup__close"
+          src="./images/Close Icon.png"
+          alt="Cerrar"
+          id="popup__close-avatar"
+        />
+        <h2 class="form__title">Cambiar foto de perfil</h2>
+        <input
+          type="url"
+          class="form__input"
+          id="input-avatar-url"
+          name="avatar"
+          placeholder="URL de la nueva foto"
+          required
+        />
+        <span class="input-error input-avatar-error"></span>
+        <button type="submit" class="form__submit">Guardar</button>
+      </form>
+    </div>
+    <script src="./pages/index.js" type="module"></script>
+  </body>
 </html>

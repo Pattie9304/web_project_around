@@ -1,4 +1,4 @@
-body,
+/*body,
 h1,
 h2,
 p {
@@ -28,4 +28,22 @@ body {
   width:100%;
   min-width:280px;
 }
+}*/
+
+body {
+  background-color: #000000; /* Asegura que el fondo de la página sea negro */
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  padding: 0; /* Elimina el padding predeterminado del body */
+}
+
+.page {
+  margin: auto;
+  font-family: "Inter", Arial, sans-serif; /* Asegura que haya una fuente de respaldo genérica */
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  max-width: 1600px;
+  width: 100%;
+  display: block;
+  text-size-adjust: 100%; /* Esta propiedad ahora es estándar, prefijos eliminados */
 }

@@ -11,14 +11,16 @@ export const formAdd = document.querySelector(addClass);
 export const popimg = document.querySelector(".popup__images");
 export const paragName = document.querySelector(".main__paragraph_name");
 export const paragAbout = document.querySelector(".main__paragraph_about");
+export const profileImg = document.querySelector(".main__profile-image");
 export const inpName = document.querySelector(".popup__input_name");
 export const inpAbout = document.querySelector(".popup__input_about");
+export const inpImage = document.querySelector(".popup__input_url");
 export const inpTitle = document.querySelector(".popup__input_title");
 export const inpUrl = document.querySelector(".popup__input_url");
 export const popimag = popimg.querySelector(".popup__image");
 export const poptxt = popimg.querySelector(".popup__paragraph");
 export const gallery = ".main__gallery";
-export const initialCards = [
+/*export const initialCards = [
   {
     name: "Valle de Yosemite",
     link: "./images/valle-yosemite.jpg",
@@ -43,7 +45,8 @@ export const initialCards = [
     name: "Lago di Braies",
     link: "./images/lago-braies.jpg",
   },
-];
+];*/
+
 export const validationConfig = {
   formSelector: ".popup__form",
   inputSelector: ".popup__input",
@@ -62,9 +65,12 @@ export const openEditAdd = (e, openPop) => {
     openPop.open();
     formAdd.classList.toggle("popup__item-hidden");
     popimg.classList.toggle("popup__item-hidden");
+    
     const userData = usInfo.getUserInfo();
     inpName.value = userData.name;
     inpAbout.value = userData.job;
+    inpImage.value = userData.image;
+    
     formValidators.forEach((validator) => {
       if (validator._formElement === formEd) {
         validator.resetValidation();
