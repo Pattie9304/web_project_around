@@ -53,7 +53,6 @@
 }
 
 .element__photo-name {
-  font-family: Inter;
   font-size: 24px;
   font-weight: 900;
   line-height: 29.05px;
@@ -101,7 +100,6 @@
   }
 
   .element__photo-name {
-    font-family: Inter;
     font-size: 20px;
     font-weight: 900;
     line-height: 29.05px;
@@ -124,7 +122,6 @@
   }
 
   .element__photo-name {
-    font-family: Inter;
     font-size: 24px;
     font-weight: 900;
     line-height: 29.05px;

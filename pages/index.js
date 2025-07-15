@@ -66,11 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Popup para agregar tarjetas
   const addCardPopup = new PopupWithForm("#popup-add-card", (data) => {
-    console.log("Datos de la tarjeta:", data);
     return api
       .addNewCard(data.name, data.link)
       .then((newCard) => {
-        console.log("Tarjeta añadida:", newCard);
         const cardElement = createCard(newCard.link, newCard.name, newCard._id);
         cardContainer.prepend(cardElement);
         addCardPopup.close();
