@@ -16,7 +16,6 @@ class Api {
         return res.json();
       })
       .then((result) => {
-        console.log(result);
         return result;
       });
   }
@@ -33,7 +32,6 @@ class Api {
         return res.json();
       })
       .then((result) => {
-        console.log(result);
         return result;
       });
   }
@@ -52,7 +50,6 @@ class Api {
         return res.json();
       })
       .then((result) => {
-        console.log("Perfil actualizado:", result);
         return result;
       });
   }
@@ -112,7 +109,6 @@ class Api {
         return res.json();
       })
       .then((result) => {
-        console.log("Avatar actualizado:", result);
         return result;
       });
   }
